@@ -39,3 +39,22 @@ a{
     color: var(--color-primary);
 }
 
+/*button*/
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    border: 2px solid var(--color-primary);
+    color: var(--color-heading);
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: var(--color-primary);
+   
+}
+
