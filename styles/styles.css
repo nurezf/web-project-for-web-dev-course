@@ -58,3 +58,40 @@ a{
    
 }
 
+/* list */
+
+ul{
+    list-style-type: none;
+    padding: 2rem;
+    margin: 2rem;
+    background-color: #222;
+    color: var(--color-heading);
+}
+
+.list__item {
+    padding: 1rem 0;
+}
+.list__item--nav {
+    display: inline-block;
+    padding: 0 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    transition: all .3s;
+}
+
+.list__item--nav:hover {
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.list__item--footer{
+    list-style: url(/icon/chevron-right.svg);
+    font-size: 2rem;
+ text-transform: capitalize;
+ transition: all .3s;
+}
+
+.list__item--footer:hover{
+    color: var(--color-primary);
+    cursor: pointer;
+}
