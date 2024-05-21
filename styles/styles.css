@@ -122,3 +122,25 @@ ul{
    
 }
 
+/* icon */
+
+.icon--container {
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 100%;
+    width: 4rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.icon--container:hover{
+    background-color: var(--color-primary);
+    color: var(--color-heading);
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+}
