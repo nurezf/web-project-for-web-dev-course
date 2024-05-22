@@ -224,6 +224,7 @@ ul{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     padding: 1rem 0;
     height: 100vh;
 }
@@ -244,7 +245,66 @@ ul{
   padding: 5rem;
 }
 
+.hero__text h2{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
 .hero__title{
     font-size: 6rem;
     font-weight: 600;
 }
+
+@media screen and  (max-width: 720px){
+
+    .hero__img{
+        display: none;
+    }
+}
+
+/*why*/
+.why{
+    background-color: #000;
+    padding: 1rem 2rem;
+}
+.why-content{
+    background-color: #000;
+    padding: 1rem 0;
+    display: flex;
+}
+
+.why__card{
+    background-color:rgb(41, 37, 30);
+    margin: 2rem;
+    text-align: center;
+    transition: all .3s;
+}
+
+.why h2{
+    color: var(--color-primary);
+}
+
+.why hr{
+    color: var(--color-primary);
+}
+.why p{
+
+    color: var(--color-body);
+    display: inline-block;
+}
+
+.why__card:hover{
+    background-color: var(--color-primary);
+    color: var(--color-heading);
+    cursor: pointer;
+}
+
+.why__card:hover h2{
+    color: var(--color-heading);
+}
+.why__card:hover p{
+    color: var(--color-heading);
+}
+
+
+
