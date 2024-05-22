@@ -306,5 +306,22 @@ ul{
     color: var(--color-heading);
 }
 
+/* nubers */
+
+.numbers{
+    background: linear-gradient(to right ,rgb(0 0 0 /0.5), rgb(0 0 0 / 0)) ,url(/images/number-bg.jpg);
+    display: flex;
+    padding: 5rem;
+    justify-content: space-evenly;
+}
+.numbers p{
+    color: var(--color-heading);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.number-element{
+    text-align: center;
+}
 
 
