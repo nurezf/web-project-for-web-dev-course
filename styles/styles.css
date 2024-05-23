@@ -161,13 +161,14 @@ ul{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color:rgba(56,56,56,.7);
-  
+    background-color:rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
 }
 
 .nav .list{
     margin: 0;
-    padding: 0;
+    padding: 1rem;
 }
 
 .logo{
@@ -191,7 +192,7 @@ ul{
 
 
 
-@media screen and  (max-width: 720px){
+@media screen and  (max-width: 768px){
     .nav .list{
         display: none;
     }
@@ -225,8 +226,12 @@ ul{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 1rem 0;
+    padding: 0;
     height: 100vh;
+}
+
+.hero{
+    padding: 10rem 5rem;
 }
 
 .hero__img img{
@@ -255,7 +260,7 @@ ul{
     font-weight: 600;
 }
 
-@media screen and  (max-width: 720px){
+@media screen and  (max-width: 768px){
 
     .hero__img{
         display: none;
@@ -305,6 +310,13 @@ ul{
 .why__card:hover p{
     color: var(--color-heading);
 }
+@media screen and  (max-width: 768px){
+
+ .why-content{
+    flex-direction: column;
+ 
+ }
+}
 
 /* nubers */
 
@@ -324,4 +336,66 @@ ul{
     text-align: center;
 }
 
+/* testimonial */
+
+.testimonial {
+    background-color: #000;
+    padding: 1rem 2rem;
+    font-style: italic;
+}
+
+.testimonial-content {
+    background-color: #000;
+    padding: 1rem 0;
+    display: flex;
+}
+
+.testimonial-card {
+    background-color:rgb(41, 37, 30);
+    margin: 2rem;
+    padding: 1rem;
+    text-align: center;
+    transition: all .3s;
+}
+
+.testimonial h2{
+    color: var(--color-heading);
+    font-size: 2rem;
+}
+
+.testimonial hr{
+    color: var(--color-primary);
+}
+
+.testimonial p{
+    color: var(--color-body);
+    display: inline-block;
+}
+
+.testimonial-card:hover{
+    background-color: var(--color-primary);
+    color: var(--color-heading);
+    cursor: pointer;
+}
+
+
+.testimonial-card:hover h2{
+    color: var(--color-heading);
+}
+
+.testimonial-card:hover p{
+    color: var(--color-heading);
+}
+
+.testimonial-card img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+}
+
+@media screen and  (max-width: 768px){
+    .testimonial-content{
+        flex-direction: column;
+    }
+}
 
