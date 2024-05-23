@@ -428,3 +428,46 @@ ul{
 }
 
 
+/*sample food*/
+
+.sample-food{
+    background-color: #000;
+    padding: 5rem 2rem;
+    color: var(--color-heading);
+    
+   
+}
+
+.sample-food-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem;
+}
+.food-card {
+    background-color: rgb(41, 37, 30);
+    padding: 1rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.food-card img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+}
+
+.show-more {
+    position: relative;
+    top: 0;
+    left: 85%;
+}
+
+@media screen and (max-width:768px) {
+    .sample-food-container{
+        flex-direction: column;
+    }
+}
+
