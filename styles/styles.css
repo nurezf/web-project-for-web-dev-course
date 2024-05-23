@@ -399,3 +399,32 @@ ul{
     }
 }
 
+/* footer */
+
+.footer{
+    background-color: #000;
+    padding: 1rem 2rem;
+    color: var(--color-heading);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-content{
+    background-color: #000;
+    padding: 1rem 0;
+    display: flex;
+}
+
+.footer-icon{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.footer-icon .icon--container{
+ margin: 1rem;   
+}
+
+
